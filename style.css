@@ -31,6 +31,9 @@ li{
 .between{
     justify-content: space-between;
 }
+.gap-2{
+    gap: 2rem;
+}
 .gap-3{
     gap: 3rem;
 }
@@ -58,8 +61,15 @@ li{
     font-size: 1.1rem;
     color: var(--pure-white);
     box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: .3s ease-in-out;
 }
-
+.btn:hover{
+    background: var(--lead)
+}
+.cart-icon{
+    color: var(--lead);
+    font-size: 1.3rem;
+}
 / *SECTIONS STYLING */
 
 
