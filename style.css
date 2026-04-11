@@ -12,3 +12,36 @@
     --hint-yellow: #FCF1CC;
     --pure-white: #FFF;
 }
+body{
+    background: var(--eye-ball);
+}
+/* BASIC STYLING */
+a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--lead);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+.between{
+    justify-content: space-between;
+}
+
+/* HEADR STYLING */
+
+
+/ *SECTIONS STYLING */
+
+
+/* FOOTER STYLING */
+
+
+
+
+
+/* MEDIA QUERIS */
