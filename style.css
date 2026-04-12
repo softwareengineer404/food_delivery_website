@@ -84,6 +84,14 @@ li{
     text-align: center;
     line-height: 20px;
 }
+.desktop-action .hamburger{
+    display: block;
+}
+.mobile-menu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
 / *SECTIONS STYLING */
 
 
