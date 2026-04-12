@@ -97,6 +97,11 @@ li{
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
+    width: 20rem;
+    padding: 2rem;
+    background: var(--pure-white);
+    border: .1rem solid var(--gold-finger);
+    border-radius: 2rem;
 
 }
 / *SECTIONS STYLING */
