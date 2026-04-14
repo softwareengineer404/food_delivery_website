@@ -39,7 +39,7 @@ li{
 }
 .wrapper{
     max-width: 1400px;
-    background: gold;
+    /*background: gold;*/
     margin: auto;
     padding-inline: 1.5rem;
 }
@@ -47,7 +47,7 @@ img{
     max-width: 100%;
     height: auto;
     margin: auto;
-    display: block;
+    
 }
 
 /* HEADR STYLING */
@@ -62,22 +62,23 @@ img{
 .btn{
     display: inline-block;
     padding: .9rem 2rem;
-    background: var(--gold-finger);
+    background: var(--gold-finger); 
     border-radius: 1rem;
     font-size: 1.1rem;
     color: var(--pure-white);
     box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
     transition: .3s ease-in-out;
+    border: none;
 }
 .btn:hover{
-    background: var(--lead)
+    background: #d9a800; 
 }
 .cart-icon{
     color: var(--lead);
     font-size: 1.3rem;
     position: relative;
 }
-.cart-icon .cart.value{
+.cart-icon .cart-value{
     position: absolute;
     top: 50%;
     right: -10px;
@@ -95,6 +96,7 @@ img{
 }
 .mobile-menu{
     display: none;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -117,9 +119,19 @@ img{
 .mobile-menu-active{
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
 }
 / *SECTIONS STYLING */
-
+.hero-section{
+    min-height: calc(100vh - 14vh);
+}
+.content,
+.image-container{
+    flex: 1;
+}
+.content h1 span{
+    color: var(--gold-finger);
+}
 
 /* FOOTER STYLING */
 
