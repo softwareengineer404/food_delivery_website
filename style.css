@@ -25,6 +25,7 @@ a{
 .flex{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 li{
     list-style: none;
@@ -135,6 +136,7 @@ img{
 .content,
 .image-container{
     flex: 1;
+    flex-basis: 300px;
 }
 .content h1 span{
     color: var(--gold-finger);
@@ -154,6 +156,11 @@ p{
     text-align: center;
     line-height: 3rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: .3s ease-in-out;
+}
+.social-icon:hover{
+    background: var(--lead);
+    color: var(--pure-white)
 }
 
 /* FOOTER STYLING */
@@ -170,5 +177,17 @@ p{
     }
     .desktop-action .hamburger{
         display: block;
+    }
+    h1{
+        font-size: 3.6rem;
+    }
+    .content{
+        padding-top: 3rem;
+    }
+    .gap-2{
+        gap: 1.4rem;
+    }
+    .gap-4{
+        gap: 4rem;
     }
 }
