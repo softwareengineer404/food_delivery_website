@@ -231,6 +231,15 @@ p{
 .order-card img{
     width: 15rem;
 }
+h4{
+    font-size: 1.8rem;
+    color: var(--lead);
+}
+.order-card.price{
+    font-size: 1.7rem;
+    color: var(--gold-finger);
+    padding: 1.3rem 0 2rem 0;
+}
 /* FOOTER STYLING */
 
 
