@@ -222,6 +222,7 @@ p{
     flex: 1;
     flex-basis: 300px;
     background: var(--pure-white);
+    padding: 0 1rem 2rem 1rem;
     border: .1rem solid var(--gold-finger);
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.05) 8px 8px 8px,
