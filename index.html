@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>food delivery website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+        />
+        
+                <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!--header part-->
@@ -190,13 +194,22 @@
                 </div>
             </section>
             <section>
-                <div class="wrapper p-top">
+                <div class="wrapper p-top flex gap-3">
                     <div class="image-container">
                         <img src="african-american-delivery-man-package-wearing-red-t-shirt-cap-showing-smartphone-screen-studio-yellow-background-fast-162265509.webp"
                     </div>
                     <div class="content">
                         <h5>Our Reviews</h5>
                         <h2> What they say?</h2>
+                        <div class="swpiper mySwipper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -205,5 +218,6 @@
         <footer>
 
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     </body>
 </html>
