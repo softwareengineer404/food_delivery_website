@@ -230,6 +230,9 @@ p{
 }
 .order-card img{
     width: 15rem;
+    filter: drop-shadow(
+        rgba(0, 0, 0, 0.2) 0 10px 10px
+    );
 }
 h4{
     font-size: 1.8rem;
