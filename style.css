@@ -270,6 +270,27 @@ h4{
 .fa-star{
     color: var(--gold-finger);
 }
+
+.app-container {
+    background: var(--hint-yellow);
+    padding: 3rem 6rem;
+    border-radius: 3rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.app-img,
+.content {
+    flex: 1;
+}
+
+.app-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 /* FOOTER STYLING */
 
 
