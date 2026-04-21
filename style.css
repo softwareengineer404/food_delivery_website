@@ -275,10 +275,11 @@ h4{
     background: var(--hint-yellow);
     padding: 3rem 6rem;
     border-radius: 3rem;
-    display: flex !important;
+    display: flex ;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 50px;
+    margin-top: 20px;
 }
 
 .app-img,
