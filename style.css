@@ -305,7 +305,11 @@ h4{
 .input-container{
     width: 43rem;
     max-width: 100%;
-    background: red;
+    background: violet;
+    padding: .8rem;
+    box-shadow: 
+    rgba(0, 0, 0, 0.2) 0 5px 8px;
+    border-radius: 1rem;
 }
 input[type="email"]{
     flex: 1;
@@ -315,6 +319,10 @@ input[type="email"]{
     font-size: 1.1rem;
     padding-left: 1rem;
 }
+input[type="email"]:focus{
+    outline: none;
+}
+
 /* FOOTER STYLING */
 
 
