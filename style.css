@@ -307,6 +307,14 @@ h4{
     max-width: 100%;
     background: red;
 }
+input[type="email"]{
+    flex: 1;
+    height: 8vh;
+    background: violet;
+    border: none;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
 /* FOOTER STYLING */
 
 
