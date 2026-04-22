@@ -301,6 +301,12 @@ h4{
 .app-container img{
     width: 45rem;
 }
+/*section 04*/
+.input-container{
+    width: 43rem;
+    max-width: 100%;
+    background: red;
+}
 /* FOOTER STYLING */
 
 
