@@ -330,6 +330,9 @@ input[type="email"]:focus{
     padding-block: 4rem;
     background: var(--hint-yellow);
 }
+.footer-wrapper{
+    flex: 1;
+}
 
 
 
