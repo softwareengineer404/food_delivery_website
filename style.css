@@ -67,6 +67,9 @@ img{
 .m-auto{
     margin: auto;
 }
+.mt-one-half{
+    margin-top: 1.5rem;
+}
 /*section 01*/
 h5{
    font-size: 1.2rem;
