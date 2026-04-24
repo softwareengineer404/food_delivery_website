@@ -343,6 +343,13 @@ input[type="email"]:focus{
     background: var(--lead);
     color: var(--pure-white);
 }
+.footer-link{
+   color: gray;
+    font-size: 1.1rem; 
+}
+.footer-link:hover{
+    color: var(--lead);
+}
 
 
 
