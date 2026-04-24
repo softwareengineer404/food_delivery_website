@@ -346,7 +346,7 @@ input[type="email"]:focus{
 .footer-wrapper {
   display: inline-block;
   vertical-align: top;
-  margin-left: 100px;
+  margin-right: 200px;
 }
 .footer-link{
    color: gray;
