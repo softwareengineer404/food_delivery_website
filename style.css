@@ -339,7 +339,10 @@ input[type="email"]:focus{
 .footer-wrapper .social-icon{
     background: var(--pure-white);
 }
-
+.footer-wrapper .social-icon:hover{
+    background: var(--lead);
+    color: var(--pure-white);
+}
 
 
 
