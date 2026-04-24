@@ -343,6 +343,11 @@ input[type="email"]:focus{
     background: var(--lead);
     color: var(--pure-white);
 }
+.footer-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+}
 .footer-link{
    color: gray;
     font-size: 1.1rem; 
