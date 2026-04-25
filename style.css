@@ -259,7 +259,16 @@ h4{
     inset: 0 0 0 auto;
     width: 25rem;
     padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+.card-list{
+    flex: 1;
+    width: 100%;
+}
+
 .wrapper p-top flex gap-3{
     flex: 1;
     display: flex;
