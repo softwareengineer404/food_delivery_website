@@ -333,8 +333,14 @@ input[type="email"]:focus{
     padding-block: 4rem;
     background: var(--hint-yellow);
 }
+.footer-container .flex{
+    align-items: flex-start;
+}
 .footer-wrapper{
     flex: 1;
+}
+.footer-wrapper:nth-child(1){
+    flex: 2;
 }
 .footer-wrapper .social-icon{
     background: var(--pure-white);
@@ -344,7 +350,7 @@ input[type="email"]:focus{
     color: var(--pure-white);
 }
 .footer-wrapper {
-  display: inline-block;
+  display: inline-block;    
   vertical-align: top;
   margin-right: 200px;
 }
