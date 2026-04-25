@@ -255,6 +255,10 @@ h4{
 /* CART TAB STYLING*/
 .cart-tab{
     background: var(--hint-yellow);
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: 25rem;
+    padding-block: 2rem;
 }
 .wrapper p-top flex gap-3{
     flex: 1;
