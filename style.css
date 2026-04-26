@@ -272,9 +272,16 @@ h4{
     width: 100%;
     background: green;
     text-align: center;
+    margin-block: 1rem;
+    padding-block: 1rem;
 }
 .total-container h4{
     display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.btn-container .btn{
+    background: var(--lead);
 }
 
 .wrapper p-top flex gap-3{
