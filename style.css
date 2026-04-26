@@ -282,6 +282,11 @@ h4{
 }
 .btn-container .btn{
     background: var(--lead);
+    transition: .3s ease-in-out;
+}
+.btn-container .btn:hover{
+    background: var(--gold-finger);
+    color: var(--lead);
 }
 
 .wrapper p-top flex gap-3{
