@@ -318,6 +318,9 @@ h4{
     gap: .1rem;
     padding: .7rem 1rem;
 }
+.cart-list .item:nth-child(even){
+    background: var(--eye-ball);
+}
 .item .image-container img{
     width: 60px;
 }
