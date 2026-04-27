@@ -267,6 +267,7 @@ h4{
 .card-list{
     flex: 1;
     width: 100%;
+    margin-top: 1.5rem;
 }
 .total-container{
     width: 100%;
@@ -302,6 +303,7 @@ h4{
 }
 .quantity-control{
     display: flex;
+    margin-left: 70px;
 }
 .item{
     display: flex;
