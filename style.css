@@ -330,7 +330,11 @@ h4{
     text-align: center;
     line-height: 1.7rem;
 }
-
+.quantity-value{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-inline: .6rem;
+}
 .wrapper p-top flex gap-3{
     flex: 1;
     display: flex;
