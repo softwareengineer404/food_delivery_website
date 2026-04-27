@@ -317,6 +317,19 @@ h4{
     font-size: 1.3rem;
     color: var(--lead);
 }
+.item .item-total{
+    font-weight: 400;
+    margin-top: .3rem;
+}
+.quantity-btn{
+    background: var(--lead);
+    color: var(--pure-white);
+    width: 1.7rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    text-align: center;
+    line-height: 1.7rem;
+}
 
 .wrapper p-top flex gap-3{
     flex: 1;
