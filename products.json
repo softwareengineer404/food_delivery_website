@@ -12,6 +12,15 @@
         "image": "Coq-au-vin-73b856b.jpg"
     },
     {
-        
+        "id": 3,
+        "name": "pure diary milk",
+        "price": 450,
+        "image": "20240109191538-homemade-yogurt.webp"
+    },
+    {
+        "id": 4,
+        "name": "special pasta",
+        "price": 370,
+        "image": "Pasta-Carbonara-Recipe-1.jpg"
     }
 ]
