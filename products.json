@@ -2,6 +2,16 @@
     {
         "id": 1,
         "name": "Delicious-Pizza",
-        "price": "800"
+        "price": "800",
+        "image": "image copy 2.png"
+    },
+    {
+        "id": 2,
+        "name": "fresh chicken meals",
+        "price": "1350",
+        "image": "Coq-au-vin-73b856b.jpg"
+    },
+    {
+        
     }
 ]
