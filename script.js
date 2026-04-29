@@ -8,6 +8,7 @@ var swiper = new Swiper(".mySwiper", {
 const cartIcon = document.querySelector('.cart-icon');
 const cartTab = document.querySelector('.cart-tab');
 const closeBtn = document.querySelector('.close-btn');
+const cardList = document.querySelector('.card-list')
 cartIcon.addEventListener('click', ()=> cartTab.classList.add('cart-tab-active'));
 closeBtn.addEventListener('click', ()=> cartTab.classList.remove('cart-tab-active'));
 
@@ -23,7 +24,8 @@ const showCards = () =>{
         <h4>Delicious pizza</h4>
         <h4 class="price">800</h4>
         <a href="#" class="btn">Add to Cart</a>
-        `
+        `;
+        cardList.appendChild(orderCard);
     })
 }
 const initApp = () => {
