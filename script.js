@@ -11,11 +11,18 @@ const closeBtn = document.querySelector('.close-btn');
 cartIcon.addEventListener('click', ()=> cartTab.classList.add('cart-tab-active'));
 closeBtn.addEventListener('click', ()=> cartTab.classList.remove('cart-tab-active'));
 let productList = [];
+const showCards = () =>{
+    productList.forEach(product =>{
+        const orderCard = document.cretaeElement('div');
+        orderCard.classList.add('order-card');
+    })
+}
 const initApp = () => {
     fetch('products.json').then
     (response => response.json()).then
     (data =>{
         productList = data;
+        showCards();
     })
 }
 initApp();
