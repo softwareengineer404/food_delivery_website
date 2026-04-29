@@ -19,10 +19,10 @@ const showCards = () =>{
         orderCard.classList.add('order-card');
         orderCard.innerHTML = `
         <div class="card-image">
-            <img src="image copy 2.png"
+            <img src="${product.image}"
         </div>
-        <h4>Delicious pizza</h4>
-        <h4 class="price">800</h4>
+        <h4>${product.name}</h4>
+        <h4 class="price">${product.price}</h4>
         <a href="#" class="btn">Add to Cart</a>
         `;
         cardList.appendChild(orderCard);
