@@ -10,11 +10,20 @@ const cartTab = document.querySelector('.cart-tab');
 const closeBtn = document.querySelector('.close-btn');
 cartIcon.addEventListener('click', ()=> cartTab.classList.add('cart-tab-active'));
 closeBtn.addEventListener('click', ()=> cartTab.classList.remove('cart-tab-active'));
+
 let productList = [];
 const showCards = () =>{
     productList.forEach(product =>{
         const orderCard = document.cretaeElement('div');
         orderCard.classList.add('order-card');
+        orderCard.innerHTML = `
+        <div class="card-image">
+            <img src="image copy 2.png"
+        </div>
+        <h4>Delicious pizza</h4>
+        <h4 class="price">800</h4>
+        <a href="#" class="btn">Add to Cart</a>
+        `
     })
 }
 const initApp = () => {
