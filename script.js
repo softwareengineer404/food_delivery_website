@@ -27,8 +27,12 @@ const showCards = () =>{
         `;
         cardList.appendChild(orderCard);
         const cardBtn = orderCard.querySelector('.card-btn');
-    })
+        cardBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+        });
+    });
 }
+
 const initApp = () => {
     fetch('products.json').then
     (response => response.json()).then
