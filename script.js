@@ -29,10 +29,13 @@ const showCards = () =>{
         const cardBtn = orderCard.querySelector('.card-btn');
         cardBtn.addEventListener('click', (e)=>{
             e.preventDefault();
+            addToCart();
         });
     });
 }
-
+const addToCart = () =>{
+    
+}
 const initApp = () => {
     fetch('products.json').then
     (response => response.json()).then
