@@ -26,6 +26,7 @@ const showCards = () =>{
         <a href="#" class="btn">Add to Cart</a>
         `;
         cardList.appendChild(orderCard);
+        const cardBtn = orderCard.querySelector('.card-btn');
     })
 }
 const initApp = () => {
