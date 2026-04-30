@@ -34,7 +34,8 @@ const showCards = () =>{
     });
 }
 const addToCart = () =>{
-    
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('item');
 }
 const initApp = () => {
     fetch('products.json').then
