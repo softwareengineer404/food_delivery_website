@@ -325,6 +325,9 @@ h4{
 .cart-list .item:nth-child(even){
     background: var(--eye-ball);
 }
+.item .detail{
+    flex: 2;
+}
 .item .image-container img{
     width: 60px;
 }
