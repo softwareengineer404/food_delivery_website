@@ -30,11 +30,11 @@ const showCards = () =>{
         const cardBtn = orderCard.querySelector('.card-btn');
         cardBtn.addEventListener('click', (e)=>{
             e.preventDefault();
-            addToCart();
+            addToCart(product);
         });
     });
 }
-const addToCart = () =>{
+const addToCart = (product) =>{
     const cartItem = document.createElement('div');
     cartItem.classList.add('item');
     cartItem.innerHTML = `
