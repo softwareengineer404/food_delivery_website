@@ -9,6 +9,7 @@ const cartIcon = document.querySelector('.cart-icon');
 const cartTab = document.querySelector('.cart-tab');
 const closeBtn = document.querySelector('.close-btn');
 const cardList = document.querySelector('.card-list')
+const cartList = document.querySelector('.cart-list');
 cartIcon.addEventListener('click', ()=> cartTab.classList.add('cart-tab-active'));
 closeBtn.addEventListener('click', ()=> cartTab.classList.remove('cart-tab-active'));
 
