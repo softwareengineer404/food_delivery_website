@@ -14,6 +14,7 @@ cartIcon.addEventListener('click', ()=> cartTab.classList.add('cart-tab-active')
 closeBtn.addEventListener('click', ()=> cartTab.classList.remove('cart-tab-active'));
 
 let productList = [];
+let cartProduct = [];
 const showCards = () =>{
     productList.forEach(product =>{
         const orderCard = document.cretaeElement('div');
@@ -35,6 +36,7 @@ const showCards = () =>{
     });
 }
 const addToCart = (product) =>{
+    const existingProduct = cartProduct.find(item => item.id === product.id);
     const cartItem = document.createElement('div');
     cartItem.classList.add('item');
     cartItem.innerHTML = `
