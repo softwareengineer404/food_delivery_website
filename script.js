@@ -22,14 +22,14 @@ const showCards = () =>{
         orderCard.classList.add('order-card');
         orderCard.innerHTML = `
         <div class="card-image">
-            <img src="${product.image}"
+            <img src="${product.image}">
         </div>
         <h4>${product.name}</h4>
         <h4 class="price">${product.price}</h4>
         <a href="#" class="btn">Add to Cart</a>
         `;
         cardList.appendChild(orderCard);
-        const cardBtn = orderCard.querySelector('.card-btn');
+        const cardBtn = orderCard.querySelector('.btn');
         cardBtn.addEventListener('click', (e)=>{
             e.preventDefault();
             addToCart(product);
