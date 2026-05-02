@@ -1,10 +1,11 @@
-var swiper = new Swiper(".mySwiper", {
+/*var swiper = new Swiper(".mySwiper", {
     loop: true,
     navigation: {
         nextE1: ".swiper-button-next",
         prevE1: ".swiper-button-prev",
     },
 });
+*/
 const cartIcon = document.querySelector('.cart-icon');
 const cartTab = document.querySelector('.cart-tab');
 const closeBtn = document.querySelector('.close-btn');
@@ -17,7 +18,7 @@ let productList = [];
 let cartProduct = [];
 const showCards = () =>{
     productList.forEach(product =>{
-        const orderCard = document.cretaeElement('div');
+        const orderCard = document.createElement('div');
         orderCard.classList.add('order-card');
         orderCard.innerHTML = `
         <div class="card-image">
