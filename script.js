@@ -42,13 +42,19 @@ const addToCart = (product) =>{
         alert('item already in cart');
         return;
     }
-    cartProduct.push(product);//Add the new product into cart array
+    cartProduct.push(product);
+    let quantity = 1;//Add the new product into cart array
     const cartItem = document.createElement('div');
     cartItem.classList.add('item');
     cartItem.innerHTML = `
     
     `;
     cartList.appendChild(cartItem);
+    const plusBtn = cartItem.querySelector('.plus');
+    plusBtn.addEventListener('click', ()=>{
+        quantity++;
+
+    }
 }
 const initApp = () => {
     fetch('products.json').then  //Go and get product data from file, Convert raw file → usable JS object Store fetched products into your variable
