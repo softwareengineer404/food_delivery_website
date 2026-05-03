@@ -59,6 +59,7 @@ const addToCart = (product) =>{
         e.preventDefault();
         quantity++;
         quantityValue.textContent = quantity;
+        itemTotal.textContent = '$${price * quantity.toFixed(2)}';
 
     }
 }
