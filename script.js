@@ -43,7 +43,8 @@ const addToCart = (product) =>{
         return;
     }
     cartProduct.push(product);
-    let quantity = 1;//Add the new product into cart array
+    let quantity = 1;
+    let price = parseFloat(product.price.replace('$',''))
     const cartItem = document.createElement('div');
     cartItem.classList.add('item');
     cartItem.innerHTML = `
@@ -53,6 +54,7 @@ const addToCart = (product) =>{
     const plusBtn = cartItem.querySelector('.plus');
 
     const quantityValue = cartItem.querySelector('.quantity-value');
+    const itemTotal = cartItem.querySelector('item-total')
     plusBtn.addEventListener('click', (e)=>{
         e.preventDefault();
         quantity++;
