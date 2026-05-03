@@ -51,8 +51,11 @@ const addToCart = (product) =>{
     `;
     cartList.appendChild(cartItem);
     const plusBtn = cartItem.querySelector('.plus');
+
+    const quantityValue = cartItem('.quantity-value');
     plusBtn.addEventListener('click', ()=>{
         quantity++;
+        quantityValue.textContent = quantity;
 
     }
 }
