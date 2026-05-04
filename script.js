@@ -10,12 +10,21 @@ const cartIcon = document.querySelector('.cart-icon');
 const cartTab = document.querySelector('.cart-tab');
 const closeBtn = document.querySelector('.close-btn');
 const cardList = document.querySelector('.card-list')
+const cartTotal = document.querySelector('.cart-total');
 const cartList = document.querySelector('.cart-list');  //Find the place where cart items will be displayed
 cartIcon.addEventListener('click', ()=> cartTab.classList.add('cart-tab-active'));
 closeBtn.addEventListener('click', ()=> cartTab.classList.remove('cart-tab-active'));
 
 let productList = []; //Stores all products from products.json
 let cartProduct = []; //Stores items added to the cart
+const updateTotals = () =>{
+    let totalPrice = 0;
+    document.querySelectorAll('.item').forEach(item =>{
+        const price = parseFloat(item.querySelector('.item-total').textContent.replace('$',''));
+        totalPrice += price;
+    })
+
+}
 const showCards = () =>{
     productList.forEach(product =>{  //Loop through each item in productList, or  product = one item (pizza, pasta, etc.
         const orderCard = document.createElement('div');
@@ -72,9 +81,15 @@ const addToCart = (product) =>{
             itemTotal.textContent = `$${(price * quantity).toFixed(2)}`;
         }
         else{
-            cartItem.remove();
-            cartProduct = cartProduct.filter(item => item.id !== product.id);
+            cartItem.classList.add('slide-out');
+            setTimeout(()=>{
+                cartItem.remove();
+                cartProduct = cartProduct.filter(item => item.id !== product.id);
+
+            }, 300)
+           
         }
+    
 });
 const initApp = () => {
     fetch('products.json').then  //Go and get product data from file, Convert raw file → usable JS object Store fetched products into your variable
