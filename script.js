@@ -42,6 +42,7 @@ const addToCart = (product) =>{
         alert('item already in cart');
         return;
     }
+}
     cartProduct.push(product);
     let quantity = 1;
     let price = parseFloat(product.price.replace('$',''))
@@ -54,16 +55,16 @@ const addToCart = (product) =>{
     const plusBtn = cartItem.querySelector('.plus');
 
     const quantityValue = cartItem.querySelector('.quantity-value');
-    const itemTotal = cartItem.querySelector('item-total')
+    const itemTotal = cartItem.querySelector('.item-total')
     const minusBtn = cartItem.querySelector('.minus')
     plusBtn.addEventListener('click', (e)=>{
         e.preventDefault();
         quantity++;
         quantityValue.textContent = quantity;
-        itemTotal.textContent = '$${price * quantity.toFixed(2)}';
+        itemTotal.textContent = `$${price * quantity.toFixed(2)}`;
 
     });
-    minusBtn.addEventListener('click', ()=>{
+    minusBtn.addEventListener('click', (e)=>{
         e.preventDefault();
         if(quantity > 1) {
             quantity--;
@@ -74,7 +75,7 @@ const addToCart = (product) =>{
             cartItem.remove();
             cartProduct = cartProduct.filter(item => item.id !== product.id);
         }
-}
+});
 const initApp = () => {
     fetch('products.json').then  //Go and get product data from file, Convert raw file → usable JS object Store fetched products into your variable
     (response => response.json()).then
