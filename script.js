@@ -62,6 +62,7 @@ const addToCart = (product) =>{
     
     `;
     cartList.appendChild(cartItem);
+    updateTotals();
     const plusBtn = cartItem.querySelector('.plus');
 
     const quantityValue = cartItem.querySelector('.quantity-value');
@@ -72,6 +73,7 @@ const addToCart = (product) =>{
         quantity++;
         quantityValue.textContent = quantity;
         itemTotal.textContent = `$${price * quantity.toFixed(2)}`;
+        updateTotals();
 
     });
     minusBtn.addEventListener('click', (e)=>{
@@ -80,12 +82,14 @@ const addToCart = (product) =>{
             quantity--;
             quantityValue.textContent = quantity;
             itemTotal.textContent = `$${(price * quantity).toFixed(2)}`;
+            updateTotals();
         }
         else{
             cartItem.classList.add('slide-out');
             setTimeout(()=>{
                 cartItem.remove();
                 cartProduct = cartProduct.filter(item => item.id !== product.id);
+                updateTotals();
 
             }, 300)
            
