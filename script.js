@@ -22,7 +22,8 @@ const updateTotals = () =>{
     document.querySelectorAll('.item').forEach(item =>{
         const price = parseFloat(item.querySelector('.item-total').textContent.replace('$',''));
         totalPrice += price;
-    })
+    });
+    cartTotal.textContent = `$${totalPrice.toFixed(2)}`;
 
 }
 const showCards = () =>{
