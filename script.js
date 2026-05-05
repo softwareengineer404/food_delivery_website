@@ -13,6 +13,7 @@ const cardList = document.querySelector('.card-list')
 const cartTotal = document.querySelector('.cart-total');
 const cartValue = document.querySelector('.cart-value');
 const cartList = document.querySelector('.cart-list');  //Find the place where cart items will be displayed
+const hamburger = document.querySelector('.hamburger');
 cartIcon.addEventListener('click', ()=> cartTab.classList.add('cart-tab-active'));
 closeBtn.addEventListener('click', ()=> cartTab.classList.remove('cart-tab-active'));
 
