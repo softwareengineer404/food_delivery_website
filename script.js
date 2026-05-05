@@ -19,7 +19,10 @@ let productList = []; //Stores all products from products.json
 let cartProduct = []; //Stores items added to the cart
 const updateTotals = () =>{
     let totalPrice = 0;
+    let totalQuantity = 0;
     document.querySelectorAll('.item').forEach(item =>{
+        const quantity = parseInt(item.querySelector('.quantity-value').textContent);
+        totalQuantity += quantity;
         const price = parseFloat(item.querySelector('.item-total').textContent.replace('$',''));
         totalPrice += price;
     });
@@ -72,7 +75,7 @@ const addToCart = (product) =>{
         e.preventDefault();
         quantity++;
         quantityValue.textContent = quantity;
-        itemTotal.textContent = `$${price * quantity.toFixed(2)}`;
+        itemTotal.textContent = `$${(price * quantity).toFixed(2)}`;
         updateTotals();
 
     });
