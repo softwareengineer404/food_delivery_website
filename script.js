@@ -17,6 +17,7 @@ const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 cartIcon.addEventListener('click', ()=> cartTab.classList.add('cart-tab-active'));
 closeBtn.addEventListener('click', ()=> cartTab.classList.remove('cart-tab-active'));
+hamburger.addEventListener('click', () => mobileMenu.classList.toggle('mobile-menu-active'));
 
 let productList = []; //Stores all products from products.json
 let cartProduct = []; //Stores items added to the cart
