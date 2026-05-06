@@ -15,6 +15,7 @@ const cartValue = document.querySelector('.cart-value');
 const cartList = document.querySelector('.cart-list');  //Find the place where cart items will be displayed
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
+const bars = document.querySelectorAll('.fa-bar');
 cartIcon.addEventListener('click', ()=> cartTab.classList.add('cart-tab-active'));
 closeBtn.addEventListener('click', ()=> cartTab.classList.remove('cart-tab-active'));
 hamburger.addEventListener('click', () => mobileMenu.classList.toggle('mobile-menu-active'));
