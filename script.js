@@ -19,6 +19,7 @@ const bars = document.querySelectorAll('.fa-bar');
 cartIcon.addEventListener('click', ()=> cartTab.classList.add('cart-tab-active'));
 closeBtn.addEventListener('click', ()=> cartTab.classList.remove('cart-tab-active'));
 hamburger.addEventListener('click', () => mobileMenu.classList.toggle('mobile-menu-active'));
+hamburger.addEvenetListener('click', ()=>bars.classList.toggle('fa-xmark'));
 
 let productList = []; //Stores all products from products.json
 let cartProduct = []; //Stores items added to the cart
