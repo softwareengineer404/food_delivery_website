@@ -77,7 +77,7 @@ const addToCart = (product) =>{
 
     const quantityValue = cartItem.querySelector('.quantity-value');
     const itemTotal = cartItem.querySelector('.item-total') //select the item-total class inorder to add eventlistener by javascript
-    const minusBtn = cartItem.querySelector('.minus')
+    const minusBtn = cartItem.querySelector('.minus') //select the item-total class inorder to add eventlistener by javascript
     plusBtn.addEventListener('click', (e)=>{
         e.preventDefault();
         quantity++;
