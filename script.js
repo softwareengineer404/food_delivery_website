@@ -12,7 +12,7 @@ const bars = document.querySelectorAll('.fa-bar');
 cartIcon.addEventListener('click', ()=> cartTab.classList.add('cart-tab-active'));
 closeBtn.addEventListener('click', ()=> cartTab.classList.remove('cart-tab-active'));
 hamburger.addEventListener('click', () => mobileMenu.classList.toggle('mobile-menu-active'));
-hamburger.addEventListener('click', ()=> bars.forEach(bar => bar.classList.toggle('fa-xmark')));
+hamburger.addEventListener('click', ()=> bars.forEach(bar => bar.classList.toggle('fa-xmark'))); // add event listener to hamburger menu, when clicked, toggle the class fa-xmark to change the icon to an X and back to hamburger when clicked again
 
 let productList = []; //Stores all products from products.json
 let cartProduct = []; //Stores items added to the cart
